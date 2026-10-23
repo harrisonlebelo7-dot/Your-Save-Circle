@@ -247,3 +247,311 @@
 
     </footer>
   </main>
+
+   <dialog 
+      id="contactsDialog" 
+      class="dialog">
+
+    <form 
+        method="dialog" 
+        class="dialog-head">
+      
+      <div>
+        <span 
+        class="eyebrow">YOUR PEOPLE
+      </span>
+      
+      <h2>Trusted circle</h2>
+    </div>
+    
+    <button 
+          class="close-btn" 
+          aria-label="Close">×
+
+        </button>
+        </form>
+
+    <div 
+       class="dialog-body">
+
+      <p 
+        class="muted">Add up to three people you trust. Keep their details up to date. Information is stored only in this browser in this prototype.
+      </p>
+
+      <div 
+      id="contactFields">
+
+      </div>
+
+      <button 
+            id="saveContacts" class="primary-btn" type="button">Save trusted contacts
+      </button>
+
+      <p 
+        id="contactMessage" class="inline-message" role="status">
+
+      </p>
+
+    </div>
+  </dialog>
+
+  <dialog 
+        id="sosDialog" class="dialog">
+
+    <form 
+         method="dialog" class="dialog-head">
+      <div>
+
+        <span 
+            class="eyebrow danger-text">EMERGENCY MODE
+          </span>
+
+          <h2>Get help quickly</h2>
+        
+        </div>
+
+        <button 
+        class="close-btn" aria-label="Close">×
+      </button>
+    </form>
+
+    <div 
+    class="dialog-body">
+      <p 
+      id="sosDescription">We will try to get your location and prepare a message for your trusted contacts.
+    </p>
+
+      <div 
+      class="progress-line">
+      <span id="sosProgress">
+
+      </span>
+      </div>
+
+      <p 
+      id="sosStatus" class="inline-message" role="status">Ready when you are.
+      </p>
+
+      <div 
+      id="sosResult" class="result-box hidden">
+     </div>
+
+      <div class="button-stack">
+
+        <button 
+        id="prepareAlert" 
+        class="primary-btn danger-btn" 
+        type="button">Get location & prepare alert
+      
+      </button>
+
+        <a 
+        class="secondary-btn" 
+        href="tel:112">Call mobile emergency number · 112
+      </a>
+
+        <button 
+        class="text-btn" 
+        id="cancelSos" 
+        type="button">Cancel
+      
+      </button>
+      </div>
+
+      <p 
+       class="muted tiny">Your browser may ask permission to access location. Sending a message or making a call may require confirmation in your phone app.
+      </p>
+
+    </div>
+    </dialog>
+
+  <dialog 
+        id="checkinDialog" 
+        class="dialog">
+
+    <form 
+        method="dialog" 
+        class="dialog-head">
+
+        <div>
+          <span 
+          class="eyebrow">JOURNEY SAFETY
+        </span>
+
+        <h2>Safe check-in</h2>
+      
+      </div>
+      
+      <button 
+            class="close-btn" 
+            aria-label="Close">×
+
+    </button>
+    </form>
+
+    <div 
+       class="dialog-body">
+
+      <p>
+        Set a timer for when you expect to arrive or finish your meeting.
+      </p>
+
+      <label 
+          for="timerMinutes">Check-in after
+     </label>
+
+      <select 
+      id="timerMinutes" 
+      class="field">
+
+      <option 
+      value="15">15 minutes
+      </option>
+      
+      <option 
+             value="30" selected>30 minutes
+      </option>
+        
+        <option 
+             value="45">45 minutes
+        </option>
+        
+        <option 
+             value="60">1 hour
+        </option>
+        
+        <option 
+             value="120">2 hours
+        </option>
+       </select>
+
+      <div 
+         id="timerState" 
+         class="timer-state">No active check-in
+      </div>
+
+      <div 
+      class="button-stack">
+
+      <button 
+          id="startTimer" 
+          class="primary-btn" 
+          type="button">Start check-in timer
+    </button>
+    
+    <button 
+         id="iAmSafe" 
+         class="secondary-btn hidden" 
+         type="button">I'm safe — check in now
+    </button>
+
+    <button 
+        id="cancelTimer" 
+        class="text-btn hidden" 
+        type="button">Cancel timer
+
+      </button>
+      </div>
+
+      <p 
+      class="muted tiny">Prototype limitation: the timer runs while this page remains open. Background alerts require a production app/backend.
+    
+    </p>
+    </div>
+
+  </dialog>
+
+  <dialog 
+       id="servicesDialog" 
+       class="dialog">
+
+    <form 
+         method="dialog" 
+         class="dialog-head">
+    <div>
+
+    <span 
+    class="eyebrow">GET HELP NEAR YOU
+    </span>
+
+    <h2>Nearby services</h2>
+  
+  </div>
+  
+  <button 
+        class="close-btn" 
+        aria-label="Close">×
+    </button>
+    </form>
+
+    <div 
+       class="dialog-body">
+
+      <p>
+        Open a map search for services near your current location, or use the emergency numbers below.
+
+      </p>
+
+      <div 
+      class="button-stack">
+
+        <button 
+             id="mapPolice" 
+             class="primary-btn" 
+             type="button">Find police stations nearby
+            </button>
+
+        <button 
+             id="mapHospitals" 
+            class="secondary-btn" 
+            type="button">Find hospitals nearby
+      </button>
+
+        <button 
+            id="mapClinics" class="secondary-btn" type="button">Find clinics nearby
+        
+      </button>
+      </div>
+
+      <div 
+         class="number-list">
+
+        <a 
+          href="tel:112">
+          <strong>112</strong>
+          
+          <span>
+              Mobile emergency
+        </span>
+        </a>
+        
+        <a href="tel:10111">
+          
+          <strong>10111</strong>
+          
+          <span>Police</span>
+        
+        </a>
+        
+        <a href="tel:10177"><strong>10177</strong><span>Ambulance</span></a></div>
+      <p class="muted tiny">Map listings and distance depend on your device, network and mapping provider. Confirm the service is appropriate before travelling.</p>
+    
+    </div>
+  </dialog>
+
+  <div 
+       id="toast" 
+       class="toast" 
+       role="status" 
+       aria-live="polite">
+
+ </div>
+
+  <script 
+  src="app.js">
+</script>
+
+
+</body>
+</html>
+
