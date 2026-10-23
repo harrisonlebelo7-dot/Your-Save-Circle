@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#291653">
+    <meta name="description" content="Your-Safe-Circle helps you reach trusted people and find emergency support.">
+
+             <!--TITLE-->
+  <title>Your-Safe-Circle | Personal Safety</title>
+
+     <!--LINKING the index class with the Json class-->
+  <link 
+     rel="manifest" href="manifest.json">
+
+     <!--LINKING the index class with the CSS class-->
+  <link 
+      rel="stylesheet" href="styles.css">
+
+
+       <!--Class for the brand-->
+
+</head>
+<body>
+
+  <header class="topbar">
+
+    <a class="brand" href="#" aria-label="Your-Safe-Circle home">
+
+      <span 
+
+      class="brand-mark">♡
+    </span>
+    
+    <span>
+      Your-Safe-Circle
+
+    </span>
+    </a>
+
+    <!--BUTTON for setting/options-->
+    <button 
+       class="small-btn" id="settingsOpen" 
+       aria-label="Open settings">⚙ Settings
+
+    </button>
+    </header>
+
+      <!--Cover page headings-->
+  <main class="app-shell">
+
+    <section class="hero">
+
+      <div 
+      class="eyebrow">YOUR SAFETY, ONE TAP AWAY
+    </div>
+
+      <h1>
+        Feel safer.<br><span>Stay connected.</span>
+      </h1>
+       
+      <p>Quick access to your trusted circle and emergency support.</p>
+
+      <div class="status-row">
+        
+        <span class="status-dot">
+
+        </span>
+        <span id="setupStatus">Set up your trusted circle to get started</span>
+
+      </div>
+    </section>
+
+    <section 
+            class="sos-panel" 
+            aria-labelledby="sosHeading">
+
+      <div class="sos-copy">
+
+        <div class="sos-label">NEED HELP RIGHT NOW?
+
+        </div>
+
+        <h2 id="sosHeading">Emergency SOS</h2>
+
+        <p>Prepare an alert with your location for your trusted contacts.
+
+        </p>
+
+      </div>
+
+      <button id="sosButton" class="sos-button" aria-label="Start emergency SOS">
+
+        <span class="sos-icon">!
+
+        </span>
+
+        <!--EMERGENCY Button-->
+        <span>EMERGENCY SOS
+
+        </span>
+
+        <small>Tap to start
+
+        </small>
+
+      </button>
+    </section>
+
+
+    <section class="actions-section">
+
+      <div class="section-heading">
+
+        <h2>Quick actions</h2>
+
+        <span>4 safety tools
+
+        </span>
+      </div>
+
+      <!--Adding location details that would be shared with user is trusted people-->
+
+      <div class="action-grid">
+
+        <button class="action-card 
+                location-card" 
+                id="shareLocation">
+
+          <span 
+          class="action-icon">⌖
+
+          </span>
+          <strong>Share my<br>location</strong>
+
+          <span 
+          class="action-hint">With trusted people
+
+        </span>
+        </button>
+
+        <!-- Option for nearby emergency services-->
+
+        <button class="action-card services-card" 
+                id="nearbyServices">
+
+          <span class="action-icon">✚
+
+          </span>
+
+          <strong>Nearby emergency<br>services</strong>
+
+          <span class="action-hint">Police, hospitals & more
+
+          </span>
+        </button>
+
+            <!--Adding check in timer panels-->
+        <button class="action-card checkin-card" 
+                id="checkinOpen">
+
+          <span 
+          class="action-icon">◷
+
+          </span>
+
+          <strong>
+            Safe<br>check-in
+          </strong>
+
+          <span 
+          class="action-hint">Set a safety timer
+
+        </span>
+        </button>
+
+        <button class="action-card contacts-card" 
+                id="contactsOpen">
+
+          <span 
+          class="action-icon">
+         </span>
+
+          <strong>My trusted<br>circle</strong>
+          <span
+           class="action-hint">Manage up to 3 people
+
+          </span>
+        </button>
+
+      </div>
+    </section>
+
+    <section 
+    class="quick-numbers">
+
+      <div>
+      <span 
+      class="mini-label">SOUTH AFRICA · MOBILE EMERGENCY
+
+     </span>
+     
+     <h3>
+      Emergency numbers
+
+     </h3>
+    </div>
+
+      <a 
+      href="tel:112" class="number-link">
+
+      <span>
+        112
+      </span>
+
+      <small>
+        Mobile emergency
+
+      </small>
+      </a>
+
+      <a href="tel:10111" class="number-link"><span>10111</span><small>Police</small></a>
+      <a href="tel:10177" class="number-link"><span>10177</span><small>Ambulance</small></a>
+    </section>
+
+    <section 
+    class="safety-note">
+    
+    <span>
+      ⓘ
+    </span>
+    
+    <p>
+      <strong>Safety note:</strong> This prototype does not dispatch police or guarantee SMS delivery. If you are in immediate danger, call emergency services directly when safe to do so.
+    </p>
+    </section>
+
+    <footer>
+      <span>
+        Your-Safe-Circle · Hackathon prototype
+
+      </span>
+      
+      <span>
+        Built for safer communities
+      </span>
+
+    </footer>
+  </main>
