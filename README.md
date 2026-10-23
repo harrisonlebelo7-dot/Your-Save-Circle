@@ -26,3 +26,39 @@ The first test will involve 5–8 volunteers using test contacts. We will observ
 
 ## Conclusion
 Your-Safe-Circle offers a simple, testable starting point for personal safety technology. Its value will depend on user feedback, transparent limits, careful privacy design and reliable integrations before any public launch.
+
+
+ ## User testing plan
+
+ ## Goal
+Check whether people can understand and use the four main safety actions quickly and confidently.
+
+ ## Participants
+Start with 5–8 volunteers from the intended audience (for example students and commuters). Explain this is a prototype, get consent, and do not collect real incident stories or sensitive personal data unless genuinely necessary.
+
+ ## Tasks
+1. Find the Emergency SOS action and explain what it does.
+2. Add a trusted person using a test number.
+3. Prepare an SOS alert and identify which steps still need the phone user's confirmation.
+4. Share a location link.
+5. find a nearby police station or hospital on the map.
+6. Start and cancel a safety check-in timer.
+
+ ## Record
+- Time to complete each task
+- Whether the participant needed help
+- Confusing labels or buttons
+- Trust/privacy concerns
+- One improvement suggested by each participant
+
+ ## Questions
+- Which feature would you use most, and why?
+- Is any label confusing?
+- Would you trust this app with your location? What would you need to know first?
+- What would make you feel safer using it?
+- What should d happen if GPS, data or SMS is unavailable?
+
+## Safety 
+Never stage a real emergency. Use test contacts and a clearly identified demo. Do not send fake alerts to emergency services.
+
+
