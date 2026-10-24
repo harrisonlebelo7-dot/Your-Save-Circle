@@ -1,0 +1,9 @@
+{
+  "name": "Your-Safe-Circle",
+  "short_name": "Safe Circle",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f3fb",
+  "theme_color": "#291653",
+  "description": "Personal safety prototype for trusted contacts and emergency support."
+}
